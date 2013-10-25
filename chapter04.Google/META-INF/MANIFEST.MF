@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Service01 Plug-in
+Bundle-SymbolicName: chapter04.Google
+Bundle-Version: 1.0.0
+Bundle-Activator: chapter04.google.Activator
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Import-Package: org.osgi.framework;version="1.3.0",
+ chapter04.searchengine

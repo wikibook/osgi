@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Naver Plug-in
+Bundle-SymbolicName: chapter04.Naver
+Bundle-Version: 1.0.0
+Bundle-Activator: chapter04.naver.Activator
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Import-Package: org.osgi.framework;version="1.3.0",
+ chapter04.searchengine

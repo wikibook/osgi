@@ -1,0 +1,3 @@
+Export-Package: org.apache.log4j.*,!chapter06.*
+Private-Package: chapter06.*
+Include-Resource: @log4j-1.2.15.jar

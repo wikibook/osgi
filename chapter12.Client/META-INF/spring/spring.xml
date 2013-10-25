@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:osgi="http://www.springframework.org/schema/osgi"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/osgi http://www.springframework.org/schema/osgi/spring-osgi.xsd">
+
+	<bean id="multiSearchClient" class="chapter12.client.MultiSearchClient" init-method="start" >
+		<property name="searchEngines" ref="searchEngineSvcs" />
+	</bean>
+	
+	<osgi:list id="searchEngineSvcs" interface="chapter04.searchengine.SearchEngine" />
+	
+		
+	<osgi:reference id="searchEngineSvc" interface="chapter04.searchengine.SearchEngine" cardinality="0..1" timeout="5000"/>	
+
+</beans>

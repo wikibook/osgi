@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN"
+    "http://www.springframework.org/dtd/spring-beans.dtd">
+
+<beans>
+    <bean id="hello" class="chapter10.Hello" >
+        <property name="myPrinter">
+            <ref local="consolePrinter" />
+        </property>
+       
+    </bean>
+
+    <bean id="consolePrinter" class="chapter10.ConsolePrinter" />
+    <bean id="errorPrinter" class="chapter10.ErrorPrinter" />
+</beans>
